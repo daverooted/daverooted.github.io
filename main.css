@@ -1,0 +1,133 @@
+/* setting default fonts and colors */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Neucha&display=swap');
+
+body {
+  font-family: 'Neucha', cursive;
+  font-size:14pt;
+  margin:0;
+  padding: 0 10px;
+  background: radial-gradient(circle, #ffaa00, #ffff00, #ffff66);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height:100vh;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 4vw;
+}
+
+h1.title {
+  margin: 0 auto;
+}
+
+/* page settings */
+#page {
+  background-color: rgb(255,255,255,.75);
+  box-shadow: 0 0 30px 1px rgb(200,100,0,.5);
+  padding: 0 1em 1em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:800px;
+  min-width:500px;
+}
+
+footer {
+  text-align: center;
+  color: #999;
+  font-size:75%
+}
+/* navigation styles */
+
+nav {
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  display: grid;
+  place-items:center;
+}
+
+nav ul {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  width:100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display:inline-block;
+  flex-grow:1;
+}
+
+nav a {
+  color: purple;
+  font-size:130%;
+  display: block;
+  text-align: center;
+  padding: 6px 20px;
+  background-color: #ffddff;
+  text-decoration: none;
+}
+
+nav li a:hover, nav li.current {
+  color: white;
+  background-color: #f6f;
+}
+
+/* these styles are for the display of images and their captions */
+
+.img-full {
+  width:100%;
+}
+.img-large {
+  width:70%
+}
+
+.img-medium {
+  width:40%
+}
+
+.img-small {
+  width:10%
+}
+
+.img-container {
+  display: grid;
+  place-items: center;
+}
+
+/* any p inside an img-container will snug up to the image */
+.img-container p {
+  width:100%;
+  text-align:center;
+  background-color: rgb(255,255,255,.75);
+  margin-top: 0;
+}
+
+/* table styles */
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: solid 1px #aaa;
+  padding: 3px 8px;
+}
+
+th {
+  background-color: #fdf;
+}
+td:first-child {
+  text-align:center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(255,255,0,.3);
+}
