@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A travelog of Ana and Dave's adventures"
+    />
+    <meta name="keywords" content="travel, vacation, photography" />
+    <meta name="author" content="Dave Cash" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>
+      Around the World with Ana and Dave: Where Should We Go Next?
+    </title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      fieldset {
+        margin: 1em 0;
+      }
+      legend {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1 style="text-align:center" class="title">
+          Around the World with Ana and Dave
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="/" class="current">Home</a></li>
+            <li><a href="thailand-cambodia-japan.html">2007</a></li>
+            <li><a href="uk-ireland.html">2011</a></li>
+            <li><a href="germany-italy.html">2014</a></li>
+            <li><a href="iceland.html">2016</a></li>
+            <li><a href="china.html">2017</a></li>
+            <li><a href="prague.html">2019</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article>
+        <figure class="img-container">
+          <img
+            class="img-full"
+            style="width:100%; height:350px; object-fit: cover; object-position: 50% 60%"
+            src="https://cdn.glitch.com/8cdbf7a1-58db-4a1e-a965-4c6a8cb6f988%2Fphoto-1566935843973-aed0ddcb0ecc.jpg?v=1601492615109"
+          />
+          <figcaption>
+            <span
+              >Photo by
+              <a
+                href="https://unsplash.com/@louishansel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank"
+                >Louis Hansel @shotsoflouis</a
+              >
+              on
+              <a
+                href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank"
+                >Unsplash</a
+              ></span
+            >
+          </figcaption>
+        </figure>
+        <p style="font-size:150%">
+          What should our next trip be?
+        </p>
+        <form method="get" action="thanks.html">
+          <fieldset>
+            <legend>
+              Where?
+            </legend>
+            <label for="climate"
+              >Which climate should we experience next?</label
+            >
+            <input list="climates" name="climate" id="climate" />
+            <datalist id="climates">
+              <option value="polar"> </option>
+              <option value="temperate"> </option>
+              <option value="arid"> </option>
+              <option value="tropical"> </option>
+              <option value="Mediterranean"> </option>
+              <option value="tundra"> </option>
+            </datalist>
+            <br />
+            <label for="continent">Which continent should we visit next?</label>
+            <select>
+              <option value=""></option>
+              <option value="AF">Africa</option>
+              <option value="AN">Antarctica</option>
+              <option value="AS">Asia</option>
+              <option value="AU">Australia</option>
+              <option value="EU">Europe</option>
+              <option value="NA">North America</option>
+              <option value="SA">South America</option>
+            </select>
+            <br />
+            <label for="countries"
+              >Which country or countries should we visit next?</label
+            >
+            <input type="text" name="countries" id="countries" style="width:50%"/>
+          </fieldset>
+          <fieldset>
+            <legend>
+              When?
+            </legend>
+            <label for="depart">When should we leave?</label>
+            <input type="date" id="depart" name="depart" />
+            &nbsp;&nbsp;&nbsp;
+            <label for="return">When should we return?</label>
+            <input type="date" id="return" name="return" />
+          </fieldset>
+          <fieldset>
+            <legend>
+              Why?
+            </legend>
+            <label for="reason"
+              >Why do think should this be our next trip?</label
+            ><br>
+            <textarea id="reason" name="reason" style="width:100%; height: 4em"></textarea>
+          </fieldset>
+          <div style="text-align: center; margin-bottom: 1em">
+          <button style="font-family: 'Neucha', cursive; font-size: 100%;background-color:#fcf; border-radius:1em; padding:1em; outline:none">
+          send your suggestion  
+          </button>
+          </div>
+        </form>
+      </article>
+      <footer>
+        &copy; 2020 Dave Cash
+      </footer>
+    </div>
+  </body>
+</html>
