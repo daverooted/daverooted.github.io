@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Neucha&display=swap');
 
 body {
-  font-family: 'Neucha', cursive;
+  font-family: 'Neucha', 'Trebuchet MS', Helvetica, cursive;
   font-size:14pt;
   margin:0;
   padding: 0 10px;
@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-family: 'Caveat', cursive;
+  font-family: 'Caveat', 'Georgia', cursive;
   font-size: 4vw;
 }
 
@@ -21,6 +21,9 @@ h1.title {
   margin: 0 auto;
 }
 
+p {
+  text-indent: 2em;
+}
 /* page settings */
 #page {
   background-color: rgb(255,255,255,.75);
@@ -62,7 +65,7 @@ nav li {
   flex-grow:1;
 }
 
-nav a {
+nav a:link {
   color: purple;
   font-size:130%;
   display: block;
@@ -72,6 +75,14 @@ nav a {
   text-decoration: none;
 }
 
+nav li a:active {
+  color:gold;
+}
+
+nav li a:visited {
+  color: purple;
+}
+
 nav li a:hover, nav li.current {
   color: white;
   background-color: #f6f;
@@ -79,9 +90,41 @@ nav li a:hover, nav li.current {
 
 /* these styles are for the display of images and their captions */
 
+figure { 
+  margin:0; /* need this because the defaults for figure are not what I want */
+}
+
+img {
+  padding: 0 2px;
+}
+
+.img-pair {
+  text-align: center;
+}
+
+.img-pair:first-child {
+  float: left;
+}
+.img-pair:last-child {
+  float: right;
+}
+
 .img-full {
   width:100%;
 }
+
+.img-half {
+  width:49%;
+}
+
+.img-third {
+  width:32%;
+}
+
+.img-quarter {
+  width:24.5%;
+}
+
 .img-large {
   width:70%
 }
@@ -100,8 +143,10 @@ nav li a:hover, nav li.current {
 }
 
 /* any p inside an img-container will snug up to the image */
-.img-container p {
+.img-container figcaption {
   width:100%;
+  font-style: italic;
+  font-size: 80%;
   text-align:center;
   background-color: rgb(255,255,255,.75);
   margin-top: 0;
@@ -130,4 +175,21 @@ td:first-child {
 
 tr:nth-child(even) {
   background-color: rgb(255,255,0,.3);
+}
+
+/* link button */
+
+.link-button {
+  display: block;
+  background-color: #faf;
+  width:200px;
+  font-size: 120%;
+  max-width:50%;
+  min-width:30%;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 0 auto 1em auto;
+  text-align: center;
+  text-decoration: none;
+  color: #903;
 }
