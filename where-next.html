@@ -41,6 +41,7 @@
         </nav>
       </header>
       <article>
+        <!-- love this, but going to swap it out for a video loop
         <figure class="img-container">
           <img
             class="img-full"
@@ -64,7 +65,41 @@
             >
           </figcaption>
         </figure>
-        <p style="font-size:150%">
+        -->
+        <figure class="img-container">
+          <video
+            width="100%"
+                 style="width:100%; height:350px; object-fit: cover; object-position: 50% 60%"
+            autoplay
+            loop
+            muted
+            poster="https://cdn.glitch.com/8cdbf7a1-58db-4a1e-a965-4c6a8cb6f988%2FScreenshot%202020-10-07%20150747.png?v=1602101295226"
+          >
+            <source
+              src="https://cdn.glitch.com/8cdbf7a1-58db-4a1e-a965-4c6a8cb6f988%2FPexels%20Videos%202257025.mp4?v=1602094419706"
+              type="video/mp4"
+            />
+            <track src="sunset-video.vtt" kind="captions" srclang="en" label="English" default>
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            <span
+              >Video by
+              <a
+                href="https://www.pexels.com/@kelly-lacy-1179532?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+                target="_blank"
+                >Kelly Lacy</a
+              >
+              from
+              <a
+                href="https://www.pexels.com/video/beautiful-view-of-sunset-2257025/"
+                target="_blank"
+                >Pexels</a
+              ></span
+            >
+          </figcaption>
+        </figure>
+        <p class="noindent" style="font-size:150%">
           What should our next trip be?
         </p>
         <form method="get" action="thanks.html">
@@ -100,7 +135,12 @@
             <label for="countries"
               >Which country or countries should we visit next?</label
             >
-            <input type="text" name="countries" id="countries" style="width:50%"/>
+            <input
+              type="text"
+              name="countries"
+              id="countries"
+              style="width:50%"
+            />
           </fieldset>
           <fieldset>
             <legend>
@@ -118,17 +158,24 @@
             </legend>
             <label for="reason"
               >Why do think should this be our next trip?</label
-            ><br>
-            <textarea id="reason" name="reason" style="width:100%; height: 4em"></textarea>
+            ><br />
+            <textarea
+              id="reason"
+              name="reason"
+              style="width:100%; height: 4em"
+            ></textarea>
           </fieldset>
           <div style="text-align: center; margin-bottom: 1em">
-          <button style="font-family: 'Neucha', cursive; font-size: 100%;background-color:#fcf; border-radius:1em; padding:1em; outline:none">
-          send your suggestion  
-          </button>
+            <button
+              style="font-family: 'Neucha', cursive; font-size: 100%;background-color:#fcf; border-radius:1em; padding:1em; outline:none"
+            >
+              send your suggestion
+            </button>
           </div>
         </form>
       </article>
       <footer>
+        <hr/>
         &copy; 2020 Dave Cash
       </footer>
     </div>
