@@ -163,6 +163,19 @@ img {
   position: relative;
 }
 
+.img-scroller-horizontal {
+  height:250px;
+  overflow:auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.img-in-scroller {
+  display: inline-block;
+  height:250px;
+}
+
 .destination-title {
   position:absolute;
   color:white;
@@ -192,6 +205,12 @@ img {
   text-align:center;
   background-color: rgb(255,255,255,.75);
   margin-top: 0;
+}
+
+/* list styles */
+
+ol li {
+  margin-bottom: 1em;
 }
 
 /* table styles */
