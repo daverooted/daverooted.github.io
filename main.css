@@ -1,20 +1,24 @@
 /* setting default fonts and colors */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Neucha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Neucha&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Neucha', 'Trebuchet MS', Helvetica, cursive;
-  font-size:14pt;
-  margin:0;
+  font-family: "Neucha", "Trebuchet MS", Helvetica, cursive;
+  font-size: 14pt;
+  margin: 0;
   padding: 0 10px;
   background: radial-gradient(circle, #ffaa00, #ffff00, #ffff66);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height:100vh;
+  height: 100vh;
 }
 
 h1 {
-  font-family: 'Caveat', 'Georgia', cursive;
-  font-size: 4vw;
+  font-family: "Caveat", "Georgia", cursive;
+  font-size: 3.5vw;
 }
 
 h1.title {
@@ -30,88 +34,91 @@ p.noindent {
 }
 
 div.psep {
-  text-align:center;
-  width:100%;
-  padding:0;
-  margin:0
+  /* this is the container for the pink svg diamonds */
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* page settings */
 #page {
-  background-color: rgb(255,255,255,.75);
-  box-shadow: 0 0 30px 1px rgb(200,100,0,.5);
+  background-color: rgb(255, 255, 255, 0.75);
+  box-shadow: 0 0 30px 1px rgb(200, 100, 0, 0.5);
   padding: 0 1em 1em 1em;
   margin-left: auto;
   margin-right: auto;
-  max-width:800px;
-  min-width:500px;
+  max-width: 800px;
+  min-width: 350px;
 }
 
 footer {
   text-align: center;
   color: #999;
-  font-size:75%
+  font-size: 75%;
 }
 
 footer hr {
-    border: none;
-    background-color: #ccc;
-    color: #ccc;
-    height: 1px;
-    margin:1em 0;
+  border: none;
+  background-color: #ccc;
+  color: #ccc;
+  height: 1px;
+  margin: 1em 0;
 }
-/* navigation styles */
+
+///////////////////////////////////// navigation styles ///////////////////////////////////////////
 
 nav {
-  margin-left:auto;
-  margin-right:auto;
-  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   display: grid;
-  place-items:center;
+  place-items: center;
 }
 
 nav ul {
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  width:100%;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 nav li {
-  display:inline-block;
-  flex-grow:1;
+  display: inline-block;
+  flex-grow: 1;
 }
 
 nav a:link {
   color: purple;
-  font-size:130%;
+  font-size: 130%;
   display: block;
   text-align: center;
-  padding: 6px 20px;
+  padding: 6px 10px;
   background-color: #ffddff;
   text-decoration: none;
 }
 
 nav li a:active {
-  color:gold;
+  color: gold;
 }
 
 nav li a:visited {
   color: purple;
 }
 
-nav li a:hover, nav li.current {
+nav li a:hover,
+nav li.current {
   color: white;
   background-color: #f6f;
 }
 
 /* these styles are for the display of images and their captions */
 
-figure { 
-  margin:0; /* need this because the defaults for figure are not what I want */
+figure {
+  margin: 0; /* need this because the defaults for figure are not what I want */
 }
 
 img {
@@ -130,31 +137,31 @@ img {
 }
 
 .img-full {
-  width:100%;
+  width: 100%;
 }
 
 .img-half {
-  width:49%;
+  width: 49%;
 }
 
 .img-third {
-  width:32%;
+  width: 32%;
 }
 
 .img-quarter {
-  width:24.5%;
+  width: 24.5%;
 }
 
 .img-large {
-  width:70%
+  width: 70%;
 }
 
 .img-medium {
-  width:40%
+  width: 40%;
 }
 
 .img-small {
-  width:10%
+  width: 10%;
 }
 
 .img-container {
@@ -164,8 +171,8 @@ img {
 }
 
 .img-scroller-horizontal {
-  height:250px;
-  overflow:auto;
+  height: 250px;
+  overflow: auto;
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -173,37 +180,37 @@ img {
 
 .img-in-scroller {
   display: inline-block;
-  height:250px;
+  height: 250px;
 }
 
 .destination-title {
-  position:absolute;
-  color:white;
-  font-family: 'Caveat', 'Georgia', cursive;
+  position: absolute;
+  color: white;
+  font-family: "Caveat", "Georgia", cursive;
 }
 
 .top-left {
-  top: .05em;
-  left: .2em;
+  top: 0.05em;
+  left: 0.2em;
 }
 
 .top-right {
-  top:.05em;
-  right:.4em;
+  top: 0.05em;
+  right: 0.4em;
 }
 
 .bottom-right {
-  bottom: .4em;
-  right: .4em;
+  bottom: 0.4em;
+  right: 0.4em;
 }
 
 /* any p inside an img-container will snug up to the image */
 .img-container figcaption {
-  width:100%;
+  width: 100%;
   font-style: italic;
   font-size: 80%;
-  text-align:center;
-  background-color: rgb(255,255,255,.75);
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.75);
   margin-top: 0;
 }
 
@@ -222,7 +229,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: solid 1px #aaa;
   padding: 3px 8px;
 }
@@ -231,11 +239,11 @@ th {
   background-color: #fdf;
 }
 td:first-child {
-  text-align:center;
+  text-align: center;
 }
 
 tr:nth-child(even) {
-  background-color: rgb(255,255,0,.3);
+  background-color: rgb(255, 255, 0, 0.3);
 }
 
 /* link button */
@@ -243,10 +251,10 @@ tr:nth-child(even) {
 .link-button {
   display: block;
   background-color: #faf;
-  width:200px;
+  width: 150px;
   font-size: 120%;
-  max-width:50%;
-  min-width:30%;
+  max-width: 50%;
+  min-width: 30%;
   border-radius: 1em;
   padding: 1em;
   margin: 0 auto 1em auto;
@@ -257,11 +265,81 @@ tr:nth-child(even) {
 
 /* media */
 audio {
-    height:30px;
+  height: 30px;
 }
 audio::-webkit-media-controls-panel {
-  background-color:#ffccff;
+  background-color: #ffccff;
 }
 audio:focus {
-  outline:none;
+  outline: none;
+}
+
+/* responsive rules */
+
+/* iPhone 5 */
+@media only screen and (max-width: 320px) {
+  body {
+    background-color:black;
+    font-size: 9pt;
+  }
+  h1 {
+    font-size: 20vw;
+  }
+  #page {
+    box-shadow: 0;
+    margin: 0;
+    max-width: 275px;
+    min-width: 275px;
+    width: 275px;
+    padding: 0 5px;
+  }
+  nav a:link {
+    font-size: 90%;
+    padding: 6px 7px;
+  }
+}
+
+/* HTC One */
+@media screen and (width: 360px) {
+  body {
+    font-size: 9pt;
+  }
+  h1 {
+    font-size: 6.5vw;
+  }
+  #page {
+    box-shadow: 0;
+    margin: 0;
+    max-width: 310px;
+    min-width: 310px;
+    width: 310px;
+    padding: 0 5px;
+  }
+  nav a:link {
+    font-size: 90%;
+    padding: 6px 7px;
+  }
+}
+
+/* Nokia Lumia 920 */
+@media screen and (max-width: 490px) {
+  body {
+    background-color: black;
+    font-size: 11pt;
+  }
+  h1 {
+    font-size: 6.5vw;
+  }
+  #page {
+    box-shadow: 0;
+    margin: 0;
+    max-width: 420px;
+    min-width: 420px;
+    width: 410px;
+    padding: 0 10px;
+  }
+  nav a:link {
+    font-size: 90%;
+    padding: 6px 7px;
+  }
 }
