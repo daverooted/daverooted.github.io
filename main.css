@@ -19,6 +19,7 @@ body {
 h1 {
   font-family: "Caveat", "Georgia", cursive;
   font-size: 3.5vw;
+  font-weight: bolder;
 }
 
 h1.title {
