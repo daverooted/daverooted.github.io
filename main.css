@@ -92,7 +92,7 @@ nav li {
   flex-grow: 1;
 }
 
-nav a:link {
+nav li a:link {
   color: purple;
   font-size: 130%;
   display: block;
